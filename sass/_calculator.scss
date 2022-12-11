@@ -1,0 +1,18 @@
+.calculator{
+    display: grid;
+    min-width: 54.2rem;
+    min-height: 73rem;
+    grid-template-columns: 54.2rem;
+    grid-template-rows: 8.4rem 12.7rem 48rem;
+    background-color: teal;
+    &__header{
+
+    }
+    &__screen{
+
+    }
+    &__keypad{
+        
+    }
+
+}
