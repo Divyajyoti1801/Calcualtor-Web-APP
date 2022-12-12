@@ -1,18 +1,97 @@
 .calculator{
     display: grid;
-    min-width: 54.2rem;
-    min-height: 73rem;
     grid-template-columns: 54.2rem;
-    grid-template-rows: 8.4rem 12.7rem 48rem;
-    background-color: teal;
+    grid-template-rows: 6rem 12.8rem 47.6rem;
+    row-gap: 2.3rem;
     &__header{
-
+        background-color: teal;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &--logo{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border
+            &--text{
+                font-size: 2rem;
+                color: $color-white-text;
+            }
+        }
+        &--toggler{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &--text{
+                font-size: 1.2rem;
+                color:$color-white-text;
+            }
+        }
     }
     &__screen{
+        background-color: $color-very-dark-desaturated-blue-3;
+        padding: 3.8rem 3rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        border-radius: $border-radius;
+        &--text{
+            width: 100%;
+            text-align: right;
+            font-size: 4rem;
+            color:$color-white-text;
+        }
 
     }
     &__keypad{
+        background-color: $color-very-dark-desaturated-blue-2;
+        padding: 3.2rem 3rem;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(5,1fr);
+        row-gap: 2.2rem;
+        column-gap: 2.3rem;
+        border-radius: $border-radius;
+        &--key{
+            font-size: $font-size-number;
+            font-weight: $font-weight;
+            font-family: $font-family;
+            vertical-align: middle;
+            border:none;
+            display: inline-block;
+            border-radius: $border-radius;
+            background-color: $color-light-grayish-orange;
+            cursor: pointer;
+            outline: none;
+            box-shadow: 0px 4px 0px $color-grayish-orange;
+            transition: all .3s ease;
+
+            &:active{
+                box-shadow: none;
+            }
+        }
         
+        &--key-4{
+            background-color: $color-desaturated-dark-blue-1;
+            color:$color-white-text;
+            box-shadow: 0px 4px 0px $color-desaturated-dark-blue-2;
+
+        }
+        &--key-17{
+            grid-row: 5/6;
+            grid-column: 1/span 2;
+            background-color: $color-desaturated-dark-blue-1;
+            color:$color-white-text;
+            box-shadow: 0px 4px 0px $color-desaturated-dark-blue-2;
+        }
+        &--key-18{
+            grid-row: 5/6;
+            grid-column: 3/span 2;
+            background-color: $color-red;
+            color:$color-white-text;
+            box-shadow: 0px 4px 0px $color-dark-red;
+        }
     }
 
 }

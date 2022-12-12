@@ -22,9 +22,92 @@ body {
 
 .calculator {
   display: grid;
-  min-width: 54.2rem;
-  min-height: 73rem;
   grid-template-columns: 54.2rem;
-  grid-template-rows: 8.4rem 12.7rem 48rem;
+  grid-template-rows: 6rem 12.8rem 47.6rem;
+  row-gap: 2.3rem;
+}
+.calculator__header {
   background-color: teal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.calculator__header--logo {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+border .calculator__header--logo--text {
+  font-size: 2rem;
+  color: hsl(0deg, 0%, 100%);
+}
+.calculator__header--toggler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculator__header--toggler--text {
+  font-size: 1.2rem;
+  color: hsl(0deg, 0%, 100%);
+}
+.calculator__screen {
+  background-color: hsl(224deg, 36%, 15%);
+  padding: 3.8rem 3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 9px;
+}
+.calculator__screen--text {
+  width: 100%;
+  text-align: right;
+  font-size: 4rem;
+  color: hsl(0deg, 0%, 100%);
+}
+.calculator__keypad {
+  background-color: hsl(223deg, 31%, 20%);
+  padding: 3.2rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  row-gap: 2.2rem;
+  column-gap: 2.3rem;
+  border-radius: 9px;
+}
+.calculator__keypad--key {
+  font-size: 3.2rem;
+  font-weight: 700;
+  font-family: "League Spartan", sans-serif;
+  vertical-align: middle;
+  border: none;
+  display: inline-block;
+  border-radius: 9px;
+  background-color: hsl(30deg, 25%, 89%);
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0px 4px 0px hsl(28deg, 16%, 65%);
+  transition: all 0.3s ease;
+}
+.calculator__keypad--key:active {
+  box-shadow: none;
+}
+.calculator__keypad--key-4 {
+  background-color: hsl(225deg, 21%, 49%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 0px 4px 0px hsl(224deg, 28%, 35%);
+}
+.calculator__keypad--key-17 {
+  grid-row: 5/6;
+  grid-column: 1/span 2;
+  background-color: hsl(225deg, 21%, 49%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 0px 4px 0px hsl(224deg, 28%, 35%);
+}
+.calculator__keypad--key-18 {
+  grid-row: 5/6;
+  grid-column: 3/span 2;
+  background-color: hsl(6deg, 63%, 50%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 0px 4px 0px hsl(6deg, 70%, 34%);
 }/*# sourceMappingURL=main.css.map */
