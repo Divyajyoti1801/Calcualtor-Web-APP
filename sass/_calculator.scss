@@ -13,8 +13,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border
             &--text{
+                padding-left: 1.2rem;
                 font-size: 2rem;
                 color: $color-white-text;
             }
@@ -26,6 +26,31 @@
             &--text{
                 font-size: 1.2rem;
                 color:$color-white-text;
+            }
+            &--container{
+                width: 7.6rem;
+                height: 5rem;
+                background-color: red;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                &--label-case{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 1.6rem;
+                    background-color: aqua;
+                    margin-bottom: .6rem;
+                }
+                &--input-case{
+                    display: flex;
+                    padding: .4rem;
+                    justify-content: space-between;
+                    width: 100%;
+                    background-color: aquamarine;
+                    border-radius: 10px;
+                }
             }
         }
     }
